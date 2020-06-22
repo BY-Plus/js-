@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(var i = 0;i<5;i++){
+            res = i ;
+            console.log(res)
+        }
+
+        var res = '';
+        for(var i = 0; i<5;i++){
+            res+=i;
+            console.log(res)  //0 01 012 0123 01234
+        }
+        console.log(res)//01234
+
+
+
+
+        //与页面有关的字符串
+        //页面使用+=
+        var a = '';
+        for(var i =0;i<5;i++){
+            //初始化变量并赋值
+            a += 'zhishi';
+        }
+        document.write(a);
+
+
+
+
+
+        for(var i = 0;i<5;i++){
+            //for循环嵌套if可以控制程序的执行
+            if(i<3){
+                console.log(i)  //0 1 2
+            }
+            
+        }
+
+
+
+        
+        //程序优化：执行少，就可以获取结果
+        for(var i = 0;i<5;i++){
+            //for循环嵌套if可以控制程序的执行
+            if(i===3){
+                console.log(i)  //0 1 2
+                //表示目的达到，跳出循环
+                break
+            }
+           console.log(i)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //其他类型转化为布尔类型的转化
+        //所有布尔类型的数据的construtor 都是boolean
+        //1.创建方法
+        var bool = true;
+        console.log(bool.construtor);
+        //2.通过new Boolean(),创建一个不二对象，将其他转化成布尔
+
+        var bool1 = new Boolean(true);
+        console.log(bool1)
+
+        var bool3 = new Boolean(''); //true
+        console.log(bool3)
+
+        var bool3 = new Boolean(0);
+        console.log(bool3)
+
+        var bool3 = new Boolean(null);
+        console.log(bool3)
+
+        var bool3 = new Boolean(undefined);
+        console.log(bool3)
+
+        var bool3 = new Boolean('false'); //true
+        console.log(bool3)
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = ['liuyang','ya','qwe']
+
+        //将数组变为字符串\
+        //arr.toString() 将数组变为字符串并返回字符串;
+        var res = arr.toString();
+        console.log(arr)
+        console.log(res)
+
+        //将数组变为字符串join
+        //arr.join()将数组变为字符串
+        //----参数为替换','自负的内容
+        //注意:参数只能替换以一维数组中字符
+        var arr1 = ['a','c','f',[2,2]];
+        var res3 = []
+
+        //将res字符串变为数组 newArr
+        //split 将字符串进行切割并返回一个数组
+        //参数为被切割的字
+        var newArr = res.split(',');
+        console.log(newArr)
+
+        var str1 = '12+1+@4243+234fdsaf+fdafas'
+        var res1  = str1.split("+");
+        console.log(res1)
+    </script>
+</body>
+</html>
